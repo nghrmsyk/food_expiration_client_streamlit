@@ -1,1 +1,3 @@
-server_url = "http://172.30.0.3:8000"
+
+import os 
+server_url = os.environ["SERVER_URL"]
