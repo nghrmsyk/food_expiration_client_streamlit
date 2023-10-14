@@ -1,3 +1,3 @@
 
 import os 
-server_url = os.environ["SERVER_URL"]
+server_ip = os.environ["SERVER_IP"]

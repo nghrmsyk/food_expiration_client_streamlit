@@ -2,12 +2,12 @@ FROM python:3.11.5-slim-bullseye
 
 WORKDIR /app
 
-ENV SERVER_URL = http://localhost:8000
-
 RUN apt update && apt -y upgrade
 
 RUN pip install streamlit 
 RUN pip install -U pydantic
+
+ENV SERVER_IP=host.docker.internal:8000
 
 COPY ./app/ /app/
 

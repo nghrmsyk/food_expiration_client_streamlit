@@ -16,7 +16,7 @@ class ImageUploader():
         Args:
             image (obj): アップロードする画像オブジェクト
         """
-        self.server_url = config.server_url + "/food-expiration/"
+        self.server_url = "http://" + config.server_ip + "/food-expiration/"
         self.image = image
 
     def get_content_type(self):
